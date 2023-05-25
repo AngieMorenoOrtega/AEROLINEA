@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
-import Seat from "../Seat/Seat";
+import Seat from "../Seat/Seat.jsx";
 const AppRoutes = () => {
   return (
     <div>

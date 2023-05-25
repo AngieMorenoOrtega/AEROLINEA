@@ -135,3 +135,4 @@ const Seat = ({ seat, onClick, selected }) => {
     ></div> // Cierre de la etiqueta div
   );
 };
+export default SeatSelector;

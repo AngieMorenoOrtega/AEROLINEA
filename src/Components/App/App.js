@@ -1,16 +1,15 @@
 import React from "react";
+import React from 'react';
+import SeatSelector from './SeatSelector';
 
-
-
-function App() {
+const App = () => {
   return (
     <div>
-      
-      {/* <Header />
-      <Main/>
-      <Footer/> */}
+      <SeatSelector />
     </div>
   );
-}
+};
 
 export default App;
+
+
