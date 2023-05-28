@@ -1,0 +1,82 @@
+@import "../../variables/variables.scss";
+
+
+.selected-seat {
+ background-color: $color-primary;
+} 
+.principal{
+ width:180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con ancho igual */
+    grid-gap: 10px; /* Espacio de 10px entre las columnas */
+    justify-content: center;
+  align-items: center;
+  
+}
+.numeros{
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  button{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    background-color: white;
+  }
+}
+  .letras{
+    background-color: $background-color;
+        display: flex;
+        justify-content: center;
+
+    
+    button{
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      border: none;
+      background-color: white;
+    }
+    div{
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      background-color:$background-color;
+    }
+  }
+  .segundo{
+    display: flex;
+    flex-direction: row;
+    width: 1673px;
+  }
+  .titulos{
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+    h1{
+      font-size: small;
+    }
+  }
+  .available-border {
+    border: 5px solid $color-primary;
+  }
+  
+  .green {
+    background-color: white;
+    border:1px $color-primary;
+  }
+  
+  .red {
+    background-color: black;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .gray {
+    background-color: gray;
+  }
+ 
