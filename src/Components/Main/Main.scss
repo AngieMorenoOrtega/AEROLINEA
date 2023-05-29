@@ -5,7 +5,9 @@
 }
 .navbar {
   font-family: $FontAlata;
-
+figure{
+  margin-left:0px;
+}
   h4 {
     font-weight: bolder;
     font-size: 25px;
@@ -15,17 +17,21 @@
   &__pay {
     p {
       font-size: $Font-size;
+      color:gray;
+      margin-left:20px;
     }
   }
   &__money {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 1200px;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
-    -moz-box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
-    box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow:13px 5px 1px 4px rgba(0, 0, 0, 0.41);
+    box-shadow: 10px 17px 20px 4px rgba(0, 0, 0, 0.41);
     margin-bottom:40px;
+    margin-left: 237px;
+
   }
   &__paymentMethod {
     img {
@@ -38,6 +44,7 @@
     margin-left: 700px;
     p {
       font-size: $Font-size;
+      color:gray;
     }
   }
   &__branchOffices {
