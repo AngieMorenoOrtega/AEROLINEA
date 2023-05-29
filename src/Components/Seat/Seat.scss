@@ -1,5 +1,20 @@
 @import "../../variables/variables.scss";
-
+#contenedor-asientos-regreso{
+  h2{
+    font-size:$font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+  }
+}
+#select{
+  background-color: rgb(223, 223, 223);
+    font-size: large;
+    font-family: "Alata";
+    padding: 10px;
+}
+.allcomponent{
+  background-color: $background-color;
+}
 .segundo{
   display:flex;
   flex-direction: row;
@@ -68,4 +83,11 @@
   }
   .available-border {
     border: 5px solid $color-primary;
+  }
+  .all{
+    h1{
+        font-weight: bolder;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+    }
   }
