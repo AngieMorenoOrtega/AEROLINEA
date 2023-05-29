@@ -13,7 +13,7 @@ import Farmacias from "../../Assets/farmacias.png";
 function Main() {
   return (
     <nav className="navbar">
-      <h4>Pago Seguro</h4>
+      <h4 id="h4">Pago Seguro</h4>
       <div className="navbar__money">
         <div className="navbar__pay">
           <p>Tarjeta de credito, Tarjeta de debito y pago electronico</p>

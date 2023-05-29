@@ -1,5 +1,8 @@
 @import "../../styledglobal/StyledGlobal.scss";
 @import "../../variables/variables.scss";
+#h4{
+  margin-left: $margin-left;
+}
 .navbar {
   font-family: $FontAlata;
 
