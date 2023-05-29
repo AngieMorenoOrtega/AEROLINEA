@@ -1,16 +1,23 @@
 @import "../../variables/variables.scss";
 
-
+.segundo{
+  display:flex;
+  flex-direction: row;
+  background-color: $background-color;
+  justify-content: center;
+}
 .selected-seat {
  background-color: $color-primary;
 } 
-.principal{
+.primero{
  width:180px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con ancho igual */
     grid-gap: 10px; /* Espacio de 10px entre las columnas */
     justify-content: center;
   align-items: center;
+  grid-gap: 10px; /* Agrega un espacio de 10px entre las columnas */
+
   
 }
 .numeros{
@@ -49,7 +56,7 @@
   .segundo{
     display: flex;
     flex-direction: row;
-    width: 1673px;
+  
   }
   .titulos{
     display: flex;
@@ -62,21 +69,3 @@
   .available-border {
     border: 5px solid $color-primary;
   }
-  
-  .green {
-    background-color: white;
-    border:1px $color-primary;
-  }
-  
-  .red {
-    background-color: black;
-  }
-  
-  .blue {
-    background-color: blue;
-  }
-  
-  .gray {
-    background-color: gray;
-  }
- 

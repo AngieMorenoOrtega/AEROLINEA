@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "../home/Home";
+import AppRoutes from "../Routes/AppRoutes.jsx"
 
 
 export const App = () => {
   return (
     <div>
-      <Home/>
+      <AppRoutes/>
     </div>
   );
 };
