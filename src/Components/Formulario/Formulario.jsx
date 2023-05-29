@@ -97,9 +97,10 @@ const Formulario = () => {
           >
             <option value="">Seleccione un destino</option>
             {tech.map((opcion) => (
-          <option key={opcion.id} value={opcion.id}>{opcion.sitio}</option>
-        ))}
-          
+              <option key={opcion.id} value={opcion.sitio}>
+                {opcion.sitio}
+              </option>
+            ))}
           </select>
         </div>
         <div>
