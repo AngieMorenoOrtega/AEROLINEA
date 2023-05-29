@@ -23,7 +23,7 @@ div{
     .card-container{
         display: flex;  
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     h5{
@@ -32,6 +32,7 @@ div{
         font-family: $font-family;
         margin:0;
         margin-bottom: 15px;
+        margin-left: 202px;
     }
     .card-title{
         font-family: $font-family;
@@ -54,6 +55,7 @@ div{
     flex-direction: column;
     height: 296px;
     justify-content: start;     
+    margin:28px;
 }
 
 

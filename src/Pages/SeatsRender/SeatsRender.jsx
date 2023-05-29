@@ -1,6 +1,6 @@
-import BoletosComponent from "../../Components/common/BoletosComponent.jsx";
+import BoletosComponent from "../../Components/common/BoletosComponent/BoletosComponent.jsx";
 import SeatSelector from "../../Components/Seat/Seat.jsx"
-import SeatsRender from "./SeatsRender.scss"
+import  "./SeatsRender.scss"
 import React from 'react'
 
 const SeatsRender = () => {

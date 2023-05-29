@@ -1,9 +1,13 @@
 @import "../../styledglobal/StyledGlobal.scss";
-
+@import "../../variables/variables.scss";
 .navbar {
   font-family: $FontAlata;
+
   h4 {
-    font-size: $FontTittle;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+   
   }
   &__pay {
     p {
@@ -18,6 +22,7 @@
     -webkit-box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
     box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
+    margin-bottom:40px;
   }
   &__paymentMethod {
     img {

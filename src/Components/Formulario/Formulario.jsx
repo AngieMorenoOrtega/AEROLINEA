@@ -77,13 +77,17 @@ const Formulario = () => {
   return (
     <nav className="navbar">
       <form onSubmit={handleSubmit}>
-        <div className="navbar__opciones">
-          <button onClick={() => handleSeleccionViaje(true)}>
+        <div className="navbar__opciones noborder">
+          <button onClick={() => handleSeleccionViaje(true)}
+          className={viajeRedondo ? "selected" : ""}
+         >
             Viaje Redondo
           </button>
-          <button onClick={() => handleSeleccionViaje(false)}>Sencillo</button>
+          <button onClick={() => handleSeleccionViaje(false)}
+           className={!viajeRedondo ? "selected" : ""}
+      >Sencillo</button>
         </div>
-        <div className="navbar__origen">
+        <div className="navbar__origen noborder">
           <h4>Bogota</h4>
           <h6>Origen</h6>
         </div>
