@@ -1,0 +1,41 @@
+@import "../../styledglobal/StyledGlobal.scss";
+
+.navbar {
+  font-family: $FontAlata;
+  h4 {
+    font-size: $FontTittle;
+  }
+  &__pay {
+    p {
+      font-size: $Font-size;
+    }
+  }
+  &__money {
+    padding: 10px;
+    border-radius: 5px;
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
+    box-shadow: 10px 17px 29px 4px rgba(0, 0, 0, 0.41);
+  }
+  &__paymentMethod {
+    img {
+      width: 30px;
+      padding-left: 20px;
+    }
+  }
+  &__cashPayment {
+    margin-top: -90px;
+    margin-left: 700px;
+    p {
+      font-size: $Font-size;
+    }
+  }
+  &__branchOffices {
+    img {
+      width: 30px;
+      padding-left: 20px;
+    }
+  }
+}

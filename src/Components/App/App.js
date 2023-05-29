@@ -1,11 +1,11 @@
 import React from "react";
-import React from 'react';
-import SeatSelector from './SeatSelector';
+import Home from "../home/Home";
 
-const App = () => {
+
+export const App = () => {
   return (
     <div>
-      <SeatSelector />
+      <Home/>
     </div>
   );
 };

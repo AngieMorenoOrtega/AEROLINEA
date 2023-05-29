@@ -7,7 +7,7 @@ import "./Footer.scss";
 import { array } from '../../Data/data.js';
 
 
-function Footer() {
+export function Footer() {
   const iconos = [AiFillCar,GiHabitatDome,BsFillPeopleFill,BiHotel, RiMessage3Fill];
 
   return (
