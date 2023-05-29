@@ -1,11 +1,12 @@
-import React from "react";
+
 import React from 'react';
-import SeatSelector from './SeatSelector';
+
+import AppRoutes from "../Routes/AppRoutes";
 
 const App = () => {
   return (
     <div>
-      <SeatSelector />
+      <AppRoutes/>
     </div>
   );
 };

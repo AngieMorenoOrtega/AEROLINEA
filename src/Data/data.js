@@ -27,3 +27,19 @@ export const numeros2=[
     {nombre:"10"},
 ]
     
+export const boleto={
+    pasajeros:2,
+    tipo:"adulto",
+    desderetorno:"mexico",
+    hastaretorno:"mexico",
+    horaretorno:"5:45 -8:47",
+    intervalosretorno:false,
+    fecharetorno:"30 de noviembre",
+    vueloregreso:true,
+    desde:"mexico",
+    hasta:"mexico",
+    hora:"5:45 -8:47",
+    intervalos:false,
+    fecha:"30 de noviembre",
+    costo:1431
+}
