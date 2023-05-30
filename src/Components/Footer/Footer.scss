@@ -58,7 +58,7 @@ div{
     flex-direction: row;
     justify-content: center;
 }
-
+// eslint-disable-next-line
 @media (max-width: 768px) {
     .card-container {
         flex-direction: column;
