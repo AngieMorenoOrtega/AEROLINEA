@@ -36,7 +36,7 @@ export const boleto={
     horaretorno2:"5:45 -8:47",
     intervalosretorno:false,
     fecharetorno:"30 de noviembre",
-    vueloregreso:true,
+    vueloregreso:false,
     desde:"mexico",
     hasta:"mexico",
     hora1:"5:45 -8:47",

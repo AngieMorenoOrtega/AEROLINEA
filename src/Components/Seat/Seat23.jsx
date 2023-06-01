@@ -7,23 +7,8 @@ import { boleto } from "../../Data/data.js";
 import { useNavigate } from 'react-router-dom';
 
 const Seats = () => {
-//   const navigate = useNavigate();
-//   const [showComponent, setShowComponent] = useState(false);
+ 
 
-// const handleClickReturn = () => {
-//   if (vueloRetorno===true) {
-//     navigate('/otra-ruta');
-//   } else {
-//     setShowComponent(true);
-//   }
-// }
-
-// return (
-//   <div>
-//     <button onClick={handleClick}>Mostrar componente</button>
-//     {showComponent && <OtroComponente />}
-//   </div>
-// );
   const vueloRetorno=boleto.vueloregreso;
   const cantidadPasajeros = boleto.pasajeros;
   const [showSeats1, setShowSeats1] = useState([]);
@@ -34,8 +19,8 @@ const Seats = () => {
   const [selectedSeats2, setSelectedSeats2] = useState([]);
   const [selectedSeats3, setSelectedSeats3] = useState([]);
   const [selectedSeats4, setSelectedSeats4] = useState([]);
+  const [allSeatsSelected, setAllSeatsSelected] = useState(true);
 
-  
   useEffect(() => {
     const getSeats = async (getFunction, setShowFunction) => {
       const seats = await getFunction();
@@ -49,7 +34,10 @@ const Seats = () => {
   }, []);
 
   const handleSeatClick = (seatId, section) => {
+
+
     let selectedSeats, setSelectedSeats;
+  
   
     if (section === 'outbound') {
       selectedSeats = selectedSeats1;
@@ -87,8 +75,19 @@ const Seats = () => {
         });
       }
     }
+    
+
   };
+  useEffect(() => {
+      const allSeatsSelected =
+        selectedSeats1.length +
+        selectedSeats2.length +
+        selectedSeats3.length +
+        selectedSeats4.length === cantidadPasajeros;
   
+      setAllSeatsSelected(allSeatsSelected);console.log(allSeatsSelected);
+    }
+      )
   
 
   return (

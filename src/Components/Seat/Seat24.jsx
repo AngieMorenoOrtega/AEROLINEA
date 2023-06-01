@@ -57,19 +57,16 @@ const SeatSelectorReturn = () => {
           confirmButtonText: 'OK',
         });
       }
-    }
+    }const allSeatsSelected = (
+      selectedSeats1.length +
+      selectedSeats2.length +
+      selectedSeats3.length +
+      selectedSeats4.length
+    ) === cantidadPasajeros;
+    
+    const data = allSeatsSelected;
   };
   
-  const handlePayment = () => {
-    // Handle payment logic here
-    // ...
-    Swal.fire({
-      title: 'Success',
-      text: 'Payment successful',
-      icon: 'success',
-      confirmButtonText: 'OK',
-    });
-  };
 
   useEffect(() => {
     const getSeats = async (getFunction, setShowFunction) => {
@@ -173,7 +170,7 @@ const SeatSelectorReturn = () => {
         </div>
       </div>
     </div>
-    <button onClick={handlePayment}>Proceed to Payment</button>
+    
   </div>
 );
 };
