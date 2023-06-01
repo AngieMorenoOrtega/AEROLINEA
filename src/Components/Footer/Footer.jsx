@@ -17,7 +17,7 @@ export function Footer() {
         <div className="card-container">
           {iconos.map((Icono, index) => (
             <div key={index}className="card" >
-              <figure className="icono">
+              <figure className="icono">np
                 <Icono  className="mi-icono"/>
               </figure>
               <p className="card-title">{array[index].nombre}</p>
