@@ -12,12 +12,12 @@ import Walmart from "../../Assets/Walmart.png";
 import Farmacias from "../../Assets/farmacias.png";
 function Main() {
   return (
-    <nav className="navbar">
-      <h4 id="h4">Pago Seguro</h4>
-      <div className="navbar__money">
-        <div className="navbar__pay">
+    <main className="main">
+      <h4 id="h4" className="main__pago">Pago Seguro</h4>
+      <div className="main__money">
+        <div className="main__pay">
           <p>Tarjeta de credito, Tarjeta de debito y pago electronico</p>
-          <div className="navbar__paymentMethod">
+          <div className="main__paymentMethod">
             <figure>
               <img src={Amex} alt="logo del banco Amex" />
               <img src={Paypal} alt="logo de paypal" />
@@ -27,9 +27,9 @@ function Main() {
             </figure>
           </div>
         </div>
-        <div className="navbar__cashPayment">
+        <div className="main__cashPayment">
           <p>Efectivo en cualquiera de las sucursales participantes</p>
-          <div className="navbar__branchOffices">
+          <div className="main__branchOffices">
             <figure>
               <img src={Oxxo} alt="sucursal de pago del Oxxo" />
               <img src={Eleven} alt="sucursal de pago Eleven" />
@@ -39,7 +39,7 @@ function Main() {
           </div>
         </div>
       </div>
-    </nav>
+    </main>
   );
 }
 

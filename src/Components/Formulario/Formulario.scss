@@ -4,13 +4,12 @@
   display: flex;
   flex-direction: column;
 
-
   &__opciones {
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 172px;
     border-radius: 5px;
-    border: 1px solid #828282;
+    border: 2px solid #828282;
     padding: 5px;
 
     button {
@@ -24,7 +23,7 @@
     position: relative;
     top: 20px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid #828282;
+    border: 2px solid #828282;
     text-align: center;
     width: 200px;
     height: 80px;
@@ -41,7 +40,7 @@
       font-size: $font-sizegray;
       color: #828282;
       position: relative;
-      top: -60px;
+      top: -55px;
     }
   }
 
@@ -70,8 +69,215 @@
       color: gray;
     }
   }
+  &__salida {
+    position: relative;
+    top: -60px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    label {
+      display: flex;
+      color: gray;
+    }
+    input {
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      border: none;
+    }
+  }
+  &__regreso {
+    display: flex;
+    position: absolute;
+    top: 320px;
+    left: 290px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    label {
+      display: flex;
+      color: gray;
+    }
+    input {
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      border: none;
+    }
+  }
+  &__adulto {
+    position: relative;
+    top: -20px;
+    left: -300px;
+    h6 {
+      font-size: 16px;
+      width: 100px;
+      font-weight: lighter;
+      position: relative;
+      top: -20px;
+      left: 90px;
+    }
+  }
+  &__containerpasajeros {
+    display: flex;
+    position: relative;
+    h1 {
+      background-color: rgb(255, 255, 255);
+      width: 200px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 10px;
+      position: relative;
+      left: 1px;
+      top: -40px;
+      font-size: 12px;
+      color: gray;
+      font-weight: lighter;
+      border: 2px solid grey;
+    }
+  }
+  &__arrow {
+    display: flex;
+    position: relative;
+    left: -150px;
+    top: -5px;
+  }
+  &__pasajeros {
+    position: absolute;
+    left: 240px;
+    top: 320px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+  }
+  &__pasajeroscontainer {
+    position: relative;
+    top: -50px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid grey;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    h5 {
+      display: flex;
+      position: relative;
+      left: -200px;
+      font-size: 12px;
+      color: grey;
+    }
+    h6 {
+      display: flex;
+      position: relative;
+      top: -40px;
+      left: 3px;
+      font-size: 16px;
+      font-weight: lighter;
+    }
+  }
+  &__adultos {
+    display: flex;
+    gap: 20px;
+  }
+  &__adultosbutton {
+    display: flex;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    button {
+      display: flex;
+      background-color: transparent;
+      border: none;
+      width: 20px;
+      height: 30px;
+      align-items: center;
+      h2 {
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__niños {
+    display: flex;
+    gap: 35px;
+  }
+  &__niñosbutton {
+    display: flex;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    button {
+      display: flex;
+      background-color: transparent;
+      border: none;
+      width: 20px;
+      height: 30px;
+      align-items: center;
+      h2 {
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__bebes {
+    display: flex;
+    gap: 30px;
+  }
+  &__bebesbutton {
+    display: flex;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    button {
+      display: flex;
+      background-color: transparent;
+      border: none;
+      width: 20px;
+      height: 30px;
+      align-items: center;
+      h2 {
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__enviar {
+    button {
+      background-color: #9d257e;
+      border: none;
+      border-radius: 40px;
+      padding: 10px;
+      width: 450px;
+      color: white;
+      position: relative;
+      top: -30px;
+      left: 18px;
+    }
+  }
+  &__iconsplane {
+    transform: rotate(-45deg);
+  }
+  &__menupasajeros {
+    position: relative;
+    top: -20px;
+    left: 180px;
+    z-index: 4000;
+    font-size: 15px;
+    font-weight: bolder;
+  }
 }
-
 .selected {
   background-color: $color-primary;
   color: white;
@@ -79,4 +285,81 @@
 
 .noborder {
   border: none;
+}
+@media (max-width: 375px) { 
+  .navbar {
+    display: flex;
+    &__origen {
+      width: 250px;
+      height: 30px;
+      border: 2px solid grey;
+      h4 {
+        margin-left: -50px;
+        margin-top: 45px;
+      }
+      h6 {
+        margin-top: -35px;
+        margin-left: -170px;
+      }
+    }
+    &__destino {
+      position: relative;
+      top: 30px;
+      left: 0px;
+      width: 250px;
+      height: 30px;
+      border: 2px solid grey;
+      label {
+        position: relative;
+        top: -20px;
+        left: -30px;
+      }
+      select {
+        position: relative;
+        top: -40px;
+        left: -60px;
+      }
+    }
+    &__salida {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      top: 38px;
+      width: 250px;
+      height: 30px;
+      border: 2px solid grey;
+    }
+    &__regreso {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      top: 45px;
+      left: -2px;
+      width: 250px;
+      height: 30px;
+      border: 2px solid grey;
+    }
+    &__pasajeroscontainer {
+      position: relative;
+      top: 30px;
+      width: 250px;
+      height: 30px;
+    }
+    &__menupasajeros {
+      position: relative;
+      top: 70px;
+      left: 225px;
+    }&__enviar {
+      button {
+        width: 270px;
+        height: 50px;
+        position: relative;
+        top: 60px;
+        left: -1px;
+      }
+    }
+    
+  }
 }
