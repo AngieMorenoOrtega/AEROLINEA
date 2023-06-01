@@ -75,7 +75,7 @@ const Seats = () => {
         });
       }
     }
-    
+
 
   };
   useEffect(() => {
@@ -210,5 +210,5 @@ const Seat = ({ seat, onClick, selectedSeats, selectedColor }) => {
     </div>
   );
 };
+export default Seats
 
-export default Seats;

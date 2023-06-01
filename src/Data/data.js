@@ -45,3 +45,9 @@ export const boleto={
     fecha:"30 de noviembre",
     costo:1431
 }
+const maletas = [
+    { nombre: 'Maleta pequeña', costo: 10 },
+    { nombre: 'Maleta mediana', costo: 20 },
+    { nombre: 'Maleta grande', costo: 30 }
+  ];
+  

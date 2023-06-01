@@ -4,7 +4,7 @@ import App from "../App/App.js";
 
 import SeatsRender from "../../Pages/SeatsRender/SeatsRender.jsx"
 import Home from "../../Pages/Home/Home.jsx"
-import SeatAll from "../Seat/Seat.jsx"
+import SeatAll from "../../Pages/SeatsRender/SeatsRender.jsx";
 const AppRoutes = () => {
   return (
     <div>
