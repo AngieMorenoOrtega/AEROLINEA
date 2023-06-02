@@ -3,10 +3,14 @@ import "./Formulario.scss";
 import { get } from "../../services/getdetails";
 import { SlArrowDown } from "react-icons/sl";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Formulario = () => {
   const [tech, handletech] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
+  const [data, setData] = useState([]);
 
   const getLinks = async () => {
     const getlink = await get("destinos");
@@ -17,6 +21,9 @@ const Formulario = () => {
     getLinks();
     console.log(tech);
   }, []);
+   
+  // const validation = tech.filter(item => item.sitio < item.destino);
+
 
   const handleAgregar = (tipo, setFieldValue, values) => {
     switch (tipo) {
@@ -57,15 +64,15 @@ const Formulario = () => {
   };
 
   const handleSubmit = (values) => {
-    console.log("Destino:", values.destino);
-    console.log("Fecha de Ida:", values.fechaIda);
-    console.log("Fecha de Vuelta:", values.fechaVuelta);
-    console.log("Adultos:", values.adultos);
-    console.log("Niños:", values.ninos);
-    console.log("Bebés:", values.bebes);
-    console.log("Viaje Redondo:", values.viajeRedondo);
+    setData([...data, values]);
   };
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+  };
+  console.log(data);
   return (
     <nav className="navbar">
       <Formik
@@ -209,7 +216,9 @@ const Formulario = () => {
               )}
             </div>
             <div className="navbar__enviar">
-            <button type="submit">Enviar</button>
+            <button type="submit"
+            onClick={handleClick}
+            >Enviar</button>
             </div>
           </Form>
         )}
@@ -218,4 +227,4 @@ const Formulario = () => {
   );
 };
 
-export default Formulario;
+export default Formulario;
