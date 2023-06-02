@@ -3,21 +3,36 @@ import "./Formulario.scss";
 import { get } from "../../services/getdetails";
 import { SlArrowDown } from "react-icons/sl";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useNavigate } from 'react-router-dom';
+import { values } from "lodash";
 
 const Formulario = () => {
   const [tech, handletech] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
-
-  const getLinks = async () => {
-    const getlink = await get("destinos");
-    handletech(getlink);
-  };
-
+  const [data, setData] = useState([]);
+ 
   useEffect(() => {
     getLinks();
-    console.log(tech);
   }, []);
+ 
+    const handleSubmit = (values) => {
+      setData([...data, values]);
+    };
+    console.log();
+  const getLinks = async () => {
+    const getlink = await get("destinos");
+    const datosget=getlink.data
+ 
+    handletech(getlink);
+     const validarDestino = getlink.filter(item => 
+   item.sitio === data.destino
+     )   
+     sessionStorage.setItem('idVuelo', JSON.stringify(validarDestino));
+     console.log(validarDestino);
+  }; 
+  
 
+ 
   const handleAgregar = (tipo, setFieldValue, values) => {
     switch (tipo) {
       case "adultos":
@@ -55,16 +70,12 @@ const Formulario = () => {
         break;
     }
   };
+  const navigate = useNavigate();
 
-  const handleSubmit = (values) => {
-    console.log("Destino:", values.destino);
-    console.log("Fecha de Ida:", values.fechaIda);
-    console.log("Fecha de Vuelta:", values.fechaVuelta);
-    console.log("Adultos:", values.adultos);
-    console.log("Niños:", values.ninos);
-    console.log("Bebés:", values.bebes);
-    console.log("Viaje Redondo:", values.viajeRedondo);
+  const handleClick = () => {
+    navigate('/');
   };
+ 
 
   return (
     <nav className="navbar">
@@ -209,7 +220,9 @@ const Formulario = () => {
               )}
             </div>
             <div className="navbar__enviar">
-            <button type="submit">Enviar</button>
+            <button type="submit"
+            onClick={handleClick}
+            >Enviar</button>
             </div>
           </Form>
         )}
@@ -218,4 +231,4 @@ const Formulario = () => {
   );
 };
 
-export default Formulario;
+export default Formulario;

@@ -85,7 +85,8 @@ const Seats = () => {
         selectedSeats3.length +
         selectedSeats4.length === cantidadPasajeros;
   
-      setAllSeatsSelected(allSeatsSelected);console.log(allSeatsSelected);
+      setAllSeatsSelected(allSeatsSelected);
+      console.log(allSeatsSelected);
     }
       )
   
