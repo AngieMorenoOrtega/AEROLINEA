@@ -36,7 +36,7 @@ export const boleto={
     horaretorno2:"5:45 -8:47",
     intervalosretorno:false,
     fecharetorno:"30 de noviembre",
-    vueloregreso:true,
+    vueloregreso:false,
     desde:"mexico",
     hasta:"mexico",
     hora1:"5:45 -8:47",
@@ -45,3 +45,9 @@ export const boleto={
     fecha:"30 de noviembre",
     costo:1431
 }
+const maletas = [
+    { nombre: 'Maleta pequeña', costo: 10 },
+    { nombre: 'Maleta mediana', costo: 20 },
+    { nombre: 'Maleta grande', costo: 30 }
+  ];
+  

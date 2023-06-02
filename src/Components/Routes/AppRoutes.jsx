@@ -4,12 +4,13 @@ import App from "../App/App.js";
 
 import SeatsRender from "../../Pages/SeatsRender/SeatsRender.jsx"
 import Home from "../../Pages/Home/Home.jsx"
+import SeatAll from "../../Pages/SeatsRender/SeatsRender.jsx";
 const AppRoutes = () => {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path={"/"} element={<Home/>}>
+          <Route path={"/"} element={<SeatAll/>}>
             {/* <Route index element={<Home />}/> */}
             {/* <Route path="destination" element={<Destination/>} />
             <Route path="crew" element={<Crew/>} />

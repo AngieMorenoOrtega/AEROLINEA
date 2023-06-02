@@ -9,10 +9,10 @@ const BoletosComponent = () => {
 <div>
   <section className='section'>
     <h1 className='background'>Tu reservación</h1>
-    <h2>Información del boleto:</h2>
+
   <ul>
-    <li className='gris'>Pasajeros</li>
-    <li>{boleto.pasajeros} {boleto.tipo}</li>
+    <li id="pasajeros1">Pasajeros</li>
+    <li id="pasajeros">{boleto.pasajeros} {boleto.tipo}</li>
   </ul>
   <p className='gris'>Vuelo de Salida</p>
   <ul>
@@ -20,30 +20,34 @@ const BoletosComponent = () => {
     <li>__</li>
     <li className='negro'>{boleto.hasta}</li>
   </ul>
-  <ul>
+  <ul className='negrita'>
     <li>{boleto.hora1}</li>
     <li>{boleto.hora2}</li>
   </ul>
-  <p className='negrita'>{boleto.fecha}</p>
+  <p>{boleto.fecha}</p>
   <p className='gris'>Vuelo de Regreso</p>
   <ul>
     <li className='negro'>{boleto.desderetorno}</li>
     <li>__</li>
     <li className='negro'>{boleto.hastaretorno}</li>
   </ul>
-  <ul>
+  <ul className='negrita'>
     <li>{boleto.horaretorno1}</li>
     <li>{boleto.horaretorno2}</li>
   </ul>
-  <p className='negrita'>{boleto.fecharetorno}</p>
+  <p >{boleto.fecharetorno}</p>
   {/* <p>Vuelo Regreso: {boleto.vueloregreso ? 'Sí' : 'No'}</p> */}
 
   {/* <p>Intervalos Retorno: {boleto.intervalosretorno ? 'Sí' : 'No'}</p> */}
 
   </section>
-  <h1 className='background'>Costo de vuelo</h1>
-   <p className='negrita'>Costo: {boleto.costo}</p>
-<section className='section'>
+
+<section className='section'> 
+ <h1 className='background'>Costo de vuelo</h1>
+  <ul>
+    <li>Total</li>
+    <li id="pasajeros">${boleto.costo}</li>
+  </ul>
   </section>  
  
 </div>
