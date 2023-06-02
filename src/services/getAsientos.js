@@ -1,5 +1,5 @@
  import axios from "axios";
- const API_FLIGHT = "http://localhost:3000/";
+ const API_FLIGHT = "https://chartreuse-pewter-bumper.glitch.me/";
  const endpointseatsabc1 = "abc1";
  const endpointseatsabc2 = "abc2";
  const endpointseatsdef1="def1";
