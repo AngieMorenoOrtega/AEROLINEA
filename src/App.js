@@ -1,11 +1,15 @@
+import React from "react";
+import AppRoutes from "./Components/Routes/AppRoutes.jsx"
 
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <h1>div</h1>
+    <div>
+      <AppRoutes/>
     </div>
   );
-}
+};
 
 export default App;
+
+
