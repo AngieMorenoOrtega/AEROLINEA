@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import SeatsRender from "../../Pages/SeatsRender/SeatsRender.jsx";
 import Home from "../../Pages/Home/Home.jsx";
-import SeatAll from "../../Pages/SeatsRender/SeatsRender.jsx";
+
 import MaletasComponent from "../../Pages/Maletas/Maletas.jsx";
 import Layout from "../layout/Layaout.jsx";
 const AppRoutes = () => {
@@ -12,9 +12,9 @@ const AppRoutes = () => {
       <BrowserRouter>
         <Routes>
           <Route path={"/"} element={<Layout />}>
-          <Route path={"/"} element={ <Home/> } />
-            <Route path="Maletas" element={ <MaletasComponent/> } />
-            
+            <Route path={"/"} element={<Home />} />
+            <Route path="Maletas" element={<MaletasComponent />} />
+            <Route path="Asientos" element={<SeatsRender />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -22,4 +22,4 @@ const AppRoutes = () => {
   );
 };
 
-export default AppRoutes;
+export default AppRoutes;

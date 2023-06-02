@@ -13,7 +13,7 @@ const Formulario = () => {
  
   useEffect(() => {
     getLinks();
-  }, [data.destino]);
+  }, []);
  
     const handleSubmit = (values) => {
       setData([...data, values]);
@@ -22,6 +22,7 @@ const Formulario = () => {
   const getLinks = async () => {
     const getlink = await get("destinos");
     const datosget=getlink.data
+ 
     handletech(getlink);
      const validarDestino = getlink.filter(item => 
    item.sitio === data.destino
