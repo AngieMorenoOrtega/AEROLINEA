@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
 
-
   &__opciones {
     display: flex;
     background-color: rgb(255, 255, 255);
@@ -68,6 +67,67 @@
       background-color: transparent;
       border: none;
       color: gray;
+    }
+  }
+  &__salida {
+    position: relative;
+    top: -60px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    label {
+      display: flex;
+      color: gray;
+    }
+    input {
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      border: none;
+    }
+  }
+  &__regreso {
+    position: relative;
+    top: -120px;
+    left: 270px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    label {
+      display: flex;
+      color: gray;
+    }
+    input {
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      border: none;
+    }
+  }
+  &__pasajeros {
+     position: relative;
+     left: 40px;
+     background-color: red;
+     width: 100px;
+  }
+  &__button {
+    background-color: red;
+  }
+ &__container {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    button {
+   background-color: rgb(17, 0, 208);
+    border: none;
+    width: 40%;
+    h5 {
+      
+    }
     }
   }
 }
