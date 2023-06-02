@@ -58,4 +58,22 @@ div{
     margin:28px;
 }
 
-
+@media (max-width: 375px) {
+    div {
+        .card-container {
+            display: inline-block;
+            position: relative;
+            top: 470px;
+        }
+    }
+    .all {
+        h5 {
+            position: relative;
+            top: 480px;
+            left: -200px;
+            width: 400px;
+        }
+        
+    }
+  }
+  
