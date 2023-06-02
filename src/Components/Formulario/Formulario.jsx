@@ -21,6 +21,9 @@ const Formulario = () => {
     getLinks();
     console.log(tech);
   }, []);
+   
+  // const validation = tech.filter(item => item.sitio < item.destino);
+
 
   const handleAgregar = (tipo, setFieldValue, values) => {
     switch (tipo) {
@@ -224,4 +227,4 @@ const Formulario = () => {
   );
 };
 
-export default Formulario;
+export default Formulario;

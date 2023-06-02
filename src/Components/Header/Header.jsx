@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FormularioBasico from "../Formulario/Formulario";
 import Fondo from "../../Assets/fondo.png";
-import './Header.scss'
+import './header.scss'
 import FormContext from '../createContext/createContext';
 const Header = () => {
   const [formData, setFormData] = useState({
