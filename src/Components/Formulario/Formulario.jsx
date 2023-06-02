@@ -81,7 +81,7 @@ const Formulario = () => {
         onSubmit={handleSubmit}
       >
         {({ values, setFieldValue }) => (
-          <Form>
+          <Form className="navbar">
             <div className="navbar__opciones noborder">
               <button
                 type="button"
@@ -208,7 +208,9 @@ const Formulario = () => {
                 </div>
               )}
             </div>
+            <div className="navbar__enviar">
             <button type="submit">Enviar</button>
+            </div>
           </Form>
         )}
       </Formik>
