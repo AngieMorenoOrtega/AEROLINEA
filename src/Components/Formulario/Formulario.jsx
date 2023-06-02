@@ -4,27 +4,34 @@ import { get } from "../../services/getdetails";
 import { SlArrowDown } from "react-icons/sl";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from 'react-router-dom';
-
-
+import { values } from "lodash";
 
 const Formulario = () => {
   const [tech, handletech] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
   const [data, setData] = useState([]);
-
-  const getLinks = async () => {
-    const getlink = await get("destinos");
-    handletech(getlink);
-  };
-
+ 
   useEffect(() => {
     getLinks();
-    console.log(tech);
-  }, []);
-   
-  // const validation = tech.filter(item => item.sitio < item.destino);
+  }, [data.destino]);
+ 
+    const handleSubmit = (values) => {
+      setData([...data, values]);
+    };
+    console.log();
+  const getLinks = async () => {
+    const getlink = await get("destinos");
+    const datosget=getlink.data
+    handletech(getlink);
+     const validarDestino = getlink.filter(item => 
+   item.sitio === data.destino
+     )   
+     sessionStorage.setItem('idVuelo', JSON.stringify(validarDestino));
+     console.log(validarDestino);
+  }; 
+  
 
-
+ 
   const handleAgregar = (tipo, setFieldValue, values) => {
     switch (tipo) {
       case "adultos":
@@ -62,17 +69,13 @@ const Formulario = () => {
         break;
     }
   };
-
-  const handleSubmit = (values) => {
-    setData([...data, values]);
-  };
-
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate('/');
   };
-  console.log(data);
+ 
+
   return (
     <nav className="navbar">
       <Formik
